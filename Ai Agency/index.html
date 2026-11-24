@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamai.AI | Apna Business Automatic Karo — WhatsApp AI, Voice Agents &amp; Property OS</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#4f46e5',
+              accent: '#f59e0b',
+              emerald: '#10b981',
+              glow: '#818cf8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-grid-light {
+      background-size: 32px 32px;
+      background-image: linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+    }
+    .glass-light {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-amber-400 selection:text-slate-950">
+
+  <!-- Ambient Light Gradients -->
+  <div class="fixed inset-0 bg-grid-light pointer-events-none -z-10"></div>
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[850px] h-[420px] bg-gradient-to-tr from-indigo-200/50 via-amber-100/40 to-emerald-100/50 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+
+  <!-- Announcement Bar -->
+  <div class="bg-gradient-to-r from-emerald-600 via-indigo-600 to-amber-600 text-white text-xs font-semibold py-2 px-4 text-center tracking-wide flex items-center justify-center gap-2 shadow-xs">
+    <span class="w-2 h-2 rounded-full bg-emerald-300 animate-ping"></span>
+    <span>🚀 WhatsApp AI Copilot, Hindi/English AI Voice Agents &amp; PropertyDesk OS — Run Your Entire Business on 1 Screen!</span>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 glass-light border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-600 flex items-center justify-center text-white shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+          <i data-lucide="trending-up" class="w-6 h-6 font-bold"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-tight text-slate-900">Kamai<span class="text-amber-500">.AI</span></span>
+          <span class="block text-[10px] tracking-wider uppercase font-bold text-slate-500">Har Business Ka Digital Mitra</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#whatsapp-suite" class="hover:text-indigo-600 transition-colors flex items-center gap-1.5">
+          <span>WhatsApp Automation</span>
+          <span class="text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-md font-bold uppercase">Main</span>
+        </a>
+        <a href="#voice-agents" class="hover:text-indigo-600 transition-colors flex items-center gap-1.5">
+          <span>AI Voice Agents</span>
+          <span class="text-[10px] bg-indigo-100 text-indigo-700 px-1.5 py-0.5 rounded-md font-bold uppercase">New</span>
+        </a>
+        <a href="#custom-solutions" class="hover:text-indigo-600 transition-colors">Customization</a>
+        <a href="#property-desk" class="hover:text-indigo-600 transition-colors">PropertyDesk OS</a>
+        <a href="#demos" class="hover:text-indigo-600 transition-colors">Live Demos</a>
+        <a href="#calculator" class="hover:text-indigo-600 transition-colors">Bachat Calculator</a>
+        <a href="#contact" class="hover:text-indigo-600 transition-colors">Free Setup</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#custom-solutions" class="hidden sm:inline-flex px-4 py-2 rounded-full text-xs font-bold border border-slate-300 text-slate-700 hover:bg-slate-100 transition-all">
+          Custom Solutions
+        </a>
+        <a href="#demos" class="px-5 py-2.5 rounded-full text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white transition-all shadow-md shadow-indigo-600/20 flex items-center gap-2">
+          <span>Live Demos</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 px-6 max-w-5xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-200 bg-indigo-50 text-indigo-700 text-xs font-bold mb-8 shadow-xs">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+      WhatsApp Sales Automation &amp; Human-Like AI Voice Agents
+    </div>
+
+    <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.12] mb-6 text-slate-900">
+      Ab Aapka Business Chalega <br class="hidden sm:block"/>
+      <span class="bg-gradient-to-r from-emerald-600 via-indigo-600 to-amber-500 bg-clip-text text-transparent">24 Ghante Autopilot Par</span>
+    </h1>
+
+    <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+      Kamai.AI ke sath paayein <strong>WhatsApp par 1.8-second instant AI replies</strong>, phone calls attend karne wale <strong>AI Voice Calling Agents</strong>, aur brokers ke liye <strong>PropertyDesk OS</strong> — har lead qualify hogi aur deals auto-close hongi!
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#whatsapp-suite" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold transition-all shadow-lg shadow-emerald-600/25 flex items-center justify-center gap-2">
+        <i data-lucide="message-square" class="w-5 h-5"></i>
+        <span>WhatsApp AI Suite Dekhein</span>
+      </a>
+      <a href="#voice-agents" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold transition-all shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2">
+        <i data-lucide="phone-call" class="w-5 h-5"></i>
+        <span>AI Voice Agents (Calling Bot)</span>
+      </a>
+      <a href="#demos" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 font-bold transition-all shadow-sm flex items-center justify-center gap-2">
+        <i data-lucide="eye" class="w-5 h-5 text-indigo-600"></i>
+        <span>Live Demos</span>
+      </a>
+    </div>
+
+    <!-- Core Value Props (Image 0 Fee removed) -->
+    <div class="mt-14 pt-8 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+      <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-xs">
+        <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center mb-2 font-bold">
+          <i data-lucide="zap" class="w-4 h-4"></i>
+        </div>
+        <p class="text-xl font-black text-slate-900">1.8s</p>
+        <p class="text-xs text-slate-500 font-semibold">WhatsApp AI Response Speed</p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-xs">
+        <div class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center mb-2 font-bold">
+          <i data-lucide="mic" class="w-4 h-4"></i>
+        </div>
+        <p class="text-xl font-black text-slate-900">Hindi + Eng</p>
+        <p class="text-xs text-slate-500 font-semibold">Human-like Voice Calling Bot</p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-xs">
+        <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-2 font-bold">
+          <i data-lucide="database" class="w-4 h-4"></i>
+        </div>
+        <p class="text-xl font-black text-slate-900">100% Yours</p>
+        <p class="text-xs text-slate-500 font-semibold">Direct Google Account Storage</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN FOCUS 1: WHATSAPP AUTOMATION SUITE -->
+  <section id="whatsapp-suite" class="py-20 px-6 bg-slate-100/80 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100 text-emerald-700 border border-emerald-200 mb-3 inline-block">
+          Primary Flagship Engine
+        </span>
+        <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-4">WhatsApp Automation &amp; CRM Pipeline</h2>
+        <p class="text-slate-600">Apne business WhatsApp ko banayein apna sabse tezz aur sabse smart salesperson jo 24 ghante customer reply aur lead booking handle karta hai.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm">
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            WhatsApp Automation for High-Converting Sales
+          </div>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-snug">
+            Turn Conversations Into Tracked Opportunities on WhatsApp
+          </h3>
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            Aapka AI assistant customer ke sawalo ka <strong>1.8 second</strong> me natural reply deta hai, lead qualify karta hai aur auto-sales pipeline me push karta hai.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <p class="text-sm text-slate-700 font-medium"><strong>Instant 1.8s AI Replies:</strong> 24/7 human-like smart responses directly on your own existing phone number.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <p class="text-sm text-slate-700 font-medium"><strong>Visual CRM Pipeline:</strong> Leads automatically grouped into <em>New (48)</em>, <em>Contacted (32)</em>, <em>In Discussion (18)</em> &amp; <em>Converted (12)</em>.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <p class="text-sm text-slate-700 font-medium"><strong>Bulk CSV Import &amp; Smart Outreach:</strong> 1-click select 10, 20, 25 ya 50 contacts aur unko personalized WhatsApp outreach bhejein.</p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="#contact" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md shadow-emerald-600/20 flex items-center gap-2">
+              <span>Start WhatsApp Automation</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#calculator" class="px-6 py-3.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-sm">
+              Calculate ROI
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual Mockup (WhatsApp Automation) -->
+        <div class="lg:col-span-6 bg-slate-900 rounded-3xl p-6 text-white shadow-xl relative overflow-hidden border border-slate-800">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-4">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+              <span class="text-xs text-slate-400 font-mono ml-2">WhatsApp Business Copilot</span>
+            </div>
+            <span class="text-[11px] bg-emerald-500/20 text-emerald-400 px-2.5 py-0.5 rounded-full font-bold">● Connected</span>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3 mb-5">
+            <div class="bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+              <p class="text-[10px] text-slate-400 uppercase font-semibold">Active Chats</p>
+              <p class="text-xl font-extrabold text-white">245</p>
+              <span class="text-[10px] text-emerald-400 font-bold">+12% today</span>
+            </div>
+            <div class="bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+              <p class="text-[10px] text-slate-400 uppercase font-semibold">New Leads</p>
+              <p class="text-xl font-extrabold text-white">88</p>
+              <span class="text-[10px] text-emerald-400 font-bold">+28%</span>
+            </div>
+            <div class="bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+              <p class="text-[10px] text-slate-400 uppercase font-semibold">Pipeline Rev</p>
+              <p class="text-xl font-extrabold text-amber-400">₹45,000</p>
+              <span class="text-[10px] text-emerald-400 font-bold">1.8s reply</span>
+            </div>
+          </div>
+
+          <div class="space-y-3 bg-slate-950/60 p-4 rounded-2xl border border-slate-800/80 text-xs">
+            <div class="flex justify-start">
+              <div class="bg-slate-800 text-slate-200 p-2.5 rounded-xl rounded-tl-none max-w-[80%]">
+                "Hi! Do you have the Website Package in stock right now?"
+              </div>
+            </div>
+            <div class="flex justify-end">
+              <div class="bg-emerald-600 text-white p-2.5 rounded-xl rounded-tr-none max-w-[85%] space-y-1">
+                <p class="font-bold">⚡ AI Replied in 1.8s:</p>
+                <p>"Yes! It's available. Includes modern responsive layout, CRM &amp; 1 yr support at ₹15,000. Would you like to view details?"</p>
+              </div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-800/90 border border-slate-700 flex items-center justify-between text-[11px]">
+              <div class="flex items-center gap-2">
+                <i data-lucide="user-check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Lead Captured: <strong>Ravi Sharma (+91 98765 43210)</strong></span>
+              </div>
+              <span class="text-emerald-400 font-bold uppercase text-[9px] bg-emerald-950/80 px-2 py-0.5 rounded">CRM Auto-Updated</span>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span>New (48)</span>
+            <span>→</span>
+            <span>Contacted (32)</span>
+            <span>→</span>
+            <span>In Discussion (18)</span>
+            <span>→</span>
+            <span class="text-emerald-400 font-bold">Converted (12)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Step Go Live (WhatsApp) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <div class="p-6 rounded-3xl bg-white border border-slate-200">
+          <div class="w-10 h-10 rounded-2xl bg-indigo-50 text-indigo-600 font-black flex items-center justify-center mb-4">1</div>
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Create Free Workspace</h4>
+          <p class="text-sm text-slate-600">Apna email aur business name daalein. Aapka private dashboard turant live ho jayega.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-white border border-slate-200">
+          <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-600 font-black flex items-center justify-center mb-4">2</div>
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Scan WhatsApp QR</h4>
+          <p class="text-sm text-slate-600">Bilkul WhatsApp Web ki tarah 10 second me QR scan karein. Kisi third-party app ki zaroorat nahi.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-white border border-slate-200">
+          <div class="w-10 h-10 rounded-2xl bg-amber-50 text-amber-600 font-black flex items-center justify-center mb-4">3</div>
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Add Products &amp; Go Live</h4>
+          <p class="text-sm text-slate-600">Apne products ya rates feed karein. Aapka AI 24/7 leads qualify aur close karna shuru kar dega.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN FOCUS 2: MARKET-READY AI AGENTS & VOICE AGENTS -->
+  <section id="voice-agents" class="py-20 px-6 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto space-y-14">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-indigo-100 text-indigo-700 border border-indigo-200 mb-3 inline-block">
+          Market-Leading AI Systems
+        </span>
+        <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-4">AI Agents &amp; Voice Calling Assistants</h2>
+        <p class="text-slate-600">Customer calls aur messages ko human jaisi natural awaaz aur reasoning ke sath handle karne wale tailored AI agents.</p>
+      </div>
+
+      <!-- Voice Agent Feature Spotlight Card -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-gradient-to-br from-indigo-900 via-slate-900 to-slate-950 p-8 md:p-12 rounded-3xl text-white shadow-xl">
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">
+            <i data-lucide="phone-forwarded" class="w-3.5 h-3.5"></i>
+            Real-Time Inbound &amp; Outbound Voice Calling
+          </div>
+          <h3 class="text-3xl sm:text-4xl font-extrabold leading-snug">
+            AI Voice Calling Agent (Hindi &amp; English)
+          </h3>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Aapka AI executive direct phone call par customer se baat karta hai, sawalon ke jawab deta hai, appointments book karta hai aur hot leads qualify karke aapke phone par notification bhejta hai.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
+            <div class="p-3 rounded-xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+              <i data-lucide="mic" class="w-4 h-4 text-amber-400 shrink-0"></i>
+              <span>Natural Indian accent &amp; Hinglish support</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+              <i data-lucide="calendar" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Live Google Calendar slot confirmation</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+              <i data-lucide="bell" class="w-4 h-4 text-indigo-400 shrink-0"></i>
+              <span>Automatic reminder calls for appointments</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+              <i data-lucide="file-text" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+              <span>Call recording &amp; text summary in CRM</span>
+            </div>
+          </div>
+
+          <div class="pt-2 flex gap-4">
+            <a href="#contact" class="px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm transition-all shadow-md shadow-amber-400/20 flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+              <span>Test AI Voice Agent</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-700 text-xs">
+            <span class="text-amber-300 font-bold flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span> Live Voice Call Simulation
+            </span>
+            <span class="text-slate-400">Duration: 01:24</span>
+          </div>
+
+          <div class="space-y-3 text-xs">
+            <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <p class="text-amber-400 font-bold mb-0.5">Caller:</p>
+              <p class="text-slate-200">"Dr. Sahab ki appointment kal sham 6 baje mil sakti hai kya?"</p>
+            </div>
+            <div class="p-2.5 rounded-xl bg-indigo-950/80 border border-indigo-800/80">
+              <p class="text-emerald-400 font-bold mb-0.5">Kamai Voice AI:</p>
+              <p class="text-slate-200">"Namaste! Kal sham 6 baje ka slot bilkul khali hai. Main Dr. Verma ke sath aapki booking confirm kar raha hu. Aapka naam note kar lu?"</p>
+            </div>
+            <div class="p-2 bg-emerald-950/60 rounded-xl border border-emerald-800/80 text-[11px] text-emerald-300 flex items-center justify-between">
+              <span>Appointment auto-booked in Calendar</span>
+              <span class="font-bold text-emerald-400">SMS / WhatsApp sent</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catalog of Available AI Agents -->
+      <div>
+        <h3 class="text-2xl font-bold text-slate-900 mb-6 text-center">Market Me Ready AI Agents Jo Hum Provide Karte Hain:</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+
+          <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 hover:border-indigo-500 hover:bg-white transition-all shadow-xs">
+            <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold mb-4">
+              <i data-lucide="bot" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-2">24/7 Inbound Sales Agent</h4>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Website aur WhatsApp par aane wale har visitor se instant baat karta hai, pricing samjhata hai, catalogue dikhata hai aur sale close karta hai.
+            </p>
+            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wide">Instant Deploy Ready</span>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:bg-white transition-all shadow-xs">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold mb-4">
+              <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-2">Lead Reactivation Agent</h4>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Purane Excel sheets ya dormant database me se cold leads ko automatic polite WhatsApp ya call karke dobara interested buyers me badalta hai.
+            </p>
+            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wide">High ROI Converter</span>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 hover:border-amber-500 hover:bg-white transition-all shadow-xs">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold mb-4">
+              <i data-lucide="headset" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-2">Customer Support Copilot</h4>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Order status, delivery tracking, refunds, aur service FAQs ko bina kisi staff ke handle karta hai. Routine load 70% kam kar deta hai.
+            </p>
+            <span class="text-xs font-bold text-amber-600 uppercase tracking-wide">Zero Staff Overhead</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION: CUSTOMIZATION AS PER YOUR BUSINESS REQUIREMENT -->
+  <section id="custom-solutions" class="py-20 px-6 bg-slate-900 text-white border-t border-slate-800">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-400/30 mb-3 inline-block">
+          Tailored Architecture
+        </span>
+        <h2 class="text-3xl md:text-5xl font-black mb-4">Customization As Per Your Business Requirement</h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Har business alag hota hai — chahe aapka Gym ho, Clinic, Real Estate Agency, D2C brand ya Manufacturing plant. Hum aapke maujooda tools, CRM aur team workflow ke mutabiq custom AI automations karte hain.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+        <!-- 1. Custom Data & Tone -->
+        <div class="p-6 rounded-3xl bg-slate-800/80 border border-slate-700 hover:border-amber-400/50 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold mb-4 border border-amber-500/20">
+              <i data-lucide="sliders" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2">Custom Brand Voice &amp; Tone</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              AI aapke brand ki bhasha me baat karega — formal corporate English, respectful Hindi, ya Hinglish. Aapke catalog, pricing aur FAQs par fine-tuned model.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-700/60 mt-4 text-[11px] text-amber-300 font-semibold">
+            ✓ Personalized Prompt Engineering
+          </div>
+        </div>
+
+        <!-- 2. Custom CRM & Tool Integrations -->
+        <div class="p-6 rounded-3xl bg-slate-800/80 border border-slate-700 hover:border-emerald-400/50 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold mb-4 border border-emerald-500/20">
+              <i data-lucide="link" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2">Existing Tool &amp; ERP Sync</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Google Sheets, Zoho, LeadSquared, Salesforce, HubSpot, Shopify ya custom SQL databases — aapka data jahan hai, AI wahi se connect hoke sync karega.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-700/60 mt-4 text-[11px] text-emerald-300 font-semibold">
+            ✓ Webhooks &amp; REST API Connectors
+          </div>
+        </div>
+
+        <!-- 3. Dynamic Business Logic -->
+        <div class="p-6 rounded-3xl bg-slate-800/80 border border-slate-700 hover:border-indigo-400/50 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold mb-4 border border-indigo-500/20">
+              <i data-lucide="git-branch" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2">Custom Multi-Step Workflows</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Lead qualifying questionnaire, instant quote calculation, PDF invoice delivery on WhatsApp, aur manager ko urgent hot-lead notifications.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-700/60 mt-4 text-[11px] text-indigo-300 font-semibold">
+            ✓ Tailored Logic &amp; Routing
+          </div>
+        </div>
+
+        <!-- 4. Dedicated White-Glove Support -->
+        <div class="p-6 rounded-3xl bg-slate-800/80 border border-slate-700 hover:border-cyan-400/50 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold mb-4 border border-cyan-500/20">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2">End-to-End Onboarding</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Aapko coding sikhne ki koi zaroorat nahi. Humari team aapke pure workflow ko audit karegi, deploy karegi aur regular updates provide karegi.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-700/60 mt-4 text-[11px] text-cyan-300 font-semibold">
+            ✓ Managed 1-on-1 Assistance
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Consultation Banner -->
+      <div class="p-8 rounded-3xl bg-gradient-to-r from-indigo-950 via-slate-900 to-amber-950/60 border border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white mb-1">Aapke Business Ka Unique Workflow Hai?</h3>
+          <p class="text-xs sm:text-sm text-slate-300">Hum aapki requirements ke mutabiq 48 ghante me custom proof-of-concept ready karke dikhayenge.</p>
+        </div>
+        <a href="#contact" class="px-7 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm whitespace-nowrap transition-all shadow-lg shadow-amber-400/20 flex items-center gap-2">
+          <span>Discuss Custom Requirement</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED SECTION: PROPERTY DESK (REAL ESTATE BROKER OS) -->
+  <section id="property-desk" class="py-20 px-6 bg-slate-100/70 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-indigo-100 text-indigo-700 border border-indigo-200 mb-3 inline-block">
+          Dedicated Real Estate Solution
+        </span>
+        <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-4">PropertyDesk: Property Dealer Dashboard</h2>
+        <p class="text-slate-600">Har lead, property aur site visit ek hi screen par. Smart 100-point matching aur 1-tap WhatsApp sharing ke sath.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm">
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
+            <i data-lucide="building-2" class="w-3.5 h-3.5"></i>
+            Built For Indian Property Dealers &amp; Brokers
+          </div>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-snug">
+            Diaries Aur Excel Sheets Chhodiye, Deal Closing Par Focus Karein
+          </h3>
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            Property Desk aapko batata hai ki aaj kis buyer ko call karna hai, kaun sa flat buyer ke budget me fit baithta hai, aur kaun si site visit kiske sath scheduled hai.
+          </p>
+
+          <!-- 100-Point Score Matching Feature Matrix -->
+          <div class="p-4 rounded-2xl bg-indigo-50/60 border border-indigo-100 space-y-3">
+            <p class="text-xs uppercase font-extrabold tracking-wider text-indigo-900">⚡ Smart Match Algorithm (Score Out of 100):</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs">
+              <div class="p-2 bg-white rounded-xl border border-indigo-100">
+                <span class="block font-black text-indigo-700 text-base">30 Pts</span>
+                <span class="text-slate-600 font-medium">Location</span>
+              </div>
+              <div class="p-2 bg-white rounded-xl border border-indigo-100">
+                <span class="block font-black text-indigo-700 text-base">25 Pts</span>
+                <span class="text-slate-600 font-medium">Property Type</span>
+              </div>
+              <div class="p-2 bg-white rounded-xl border border-indigo-100">
+                <span class="block font-black text-indigo-700 text-base">25 Pts</span>
+                <span class="text-slate-600 font-medium">BHK Layout</span>
+              </div>
+              <div class="p-2 bg-white rounded-xl border border-indigo-100">
+                <span class="block font-black text-indigo-700 text-base">20 Pts</span>
+                <span class="text-slate-600 font-medium">Budget Fit</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3 pt-1">
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <p class="text-sm text-slate-700 font-medium"><strong>One-Tap WhatsApp Share:</strong> Selected matches ki photo links aur pricing ready-formatted message me WhatsApp par 1 click me bhejein.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <p class="text-sm text-slate-700 font-medium"><strong>Clash-Free Site Visits:</strong> Google Calendar synced. Ek trip me multiple flats dikhayein aur field executive ko invite karein.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <p class="text-sm text-slate-700 font-medium"><strong>Executive Private Feedback:</strong> Visit ke baad executive secret link se Hot/Warm/Cold outcome submit karega, jo seedha lead me update hoga.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              </div>
+              <p class="text-sm text-slate-700 font-medium"><strong>Your Data, Your Google:</strong> Saare records aapke Google Sheet me aur photos Google Drive me safe rehte hain.</p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="#contact" class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-md shadow-indigo-600/20 flex items-center gap-2">
+              <span>Book 20-Min PropertyDesk Demo</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Real Estate Dashboard Mockup -->
+        <div class="lg:col-span-6 bg-slate-950 rounded-3xl p-6 text-white shadow-xl relative overflow-hidden border border-slate-800">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-4">
+            <div class="flex items-center gap-2">
+              <i data-lucide="building" class="w-4 h-4 text-emerald-400"></i>
+              <span class="text-xs font-bold text-white">Sharma Properties • Noida Hub</span>
+            </div>
+            <span class="text-[11px] bg-indigo-500/20 text-indigo-300 px-2.5 py-0.5 rounded-full font-bold">Sat, 10 Oct Live</span>
+          </div>
+
+          <!-- Call List for Today -->
+          <div class="mb-4 bg-slate-900 p-3.5 rounded-2xl border border-slate-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-amber-400 flex items-center gap-1.5">
+                <i data-lucide="phone-call" class="w-3.5 h-3.5"></i> Today's Priority Follow-up Queue
+              </span>
+              <span class="text-[10px] bg-amber-400/10 text-amber-300 px-2 py-0.5 rounded-full font-bold">7 Due Today</span>
+            </div>
+            <div class="p-2.5 bg-slate-950/80 rounded-xl border border-slate-800/80 flex items-center justify-between">
+              <div>
+                <p class="text-xs font-bold text-white">Aarav Sharma (3 BHK • Sec 62)</p>
+                <p class="text-[11px] text-slate-400">Budget: ₹85 L - ₹1 Cr • Best Match: <strong>100/100</strong></p>
+              </div>
+              <div class="flex gap-2">
+                <button class="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold rounded-lg flex items-center gap-1">
+                  <i data-lucide="phone" class="w-3 h-3"></i> Call
+                </button>
+                <button class="px-2.5 py-1 bg-indigo-600 hover:bg-indigo-500 text-white text-[11px] font-bold rounded-lg flex items-center gap-1">
+                  <i data-lucide="share-2" class="w-3 h-3"></i> WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property Match Card Preview -->
+          <div class="space-y-2 bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 text-xs">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-200">Smart Best-Fit Property Found:</span>
+              <span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-400 font-extrabold rounded-md text-[10px]">Match 100/100</span>
+            </div>
+            <div class="p-2.5 bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-between">
+              <div>
+                <h5 class="font-bold text-white text-xs">Parkview Residency (Sector 62)</h5>
+                <p class="text-[11px] text-slate-400">3 BHK • 1,500 sq.ft • ₹95 Lakh</p>
+              </div>
+              <span class="text-emerald-400 text-xs font-bold">Within Budget</span>
+            </div>
+            <div class="p-2 bg-indigo-950/50 rounded-xl border border-indigo-900/50 text-[11px] text-indigo-200 flex items-center justify-between">
+              <span>Site visit booked: Sun 11 Oct, 12:00 PM (Sana)</span>
+              <span class="text-[9px] uppercase font-bold text-emerald-400">Google Cal Synced</span>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Duplicate Phone Numbers Auto-Flagged</span>
+            <span class="text-emerald-400 font-bold">Direct Google Integration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE DEMO WEBSITES SHOWCASE (CLEAN CLIENT DEMOS) -->
+  <section id="demos" class="py-24 px-6 border-t border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-indigo-50 text-indigo-600 border border-indigo-200 mb-3 inline-block">
+          Interactive Live Prototypes
+        </span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4">Hamare Live Client Demos</h2>
+        <p class="text-slate-600">Neeche diye gaye kisi bhi link par click karke dekhein ki alag-alag industries ke liye banayi gayi websites live kaise kaam karti hain.</p>
+      </div>
+
+      <!-- Live Demo Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- 1. Vistara Atelier -->
+        <div class="group rounded-3xl border border-slate-200 bg-slate-50/80 hover:bg-white p-7 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs px-3 py-1 rounded-full bg-indigo-100/80 text-indigo-700 font-bold border border-indigo-200">Architecture &amp; Design</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">Vistara Atelier</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Bespoke luxury architectural &amp; interior design studio prototype. Modern aesthetics, curated portfolio display, aur automated client inquiry routing.
+            </p>
+          </div>
+          <a href="https://vistaraatelier.vercel.app/" target="_blank" class="w-full py-3 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-md shadow-indigo-600/20">
+            <span>Live Site Open Karein</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- 2. VetiPaws -->
+        <div class="group rounded-3xl border border-slate-200 bg-slate-50/80 hover:bg-white p-7 hover:border-emerald-500 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+                <i data-lucide="paw-print" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs px-3 py-1 rounded-full bg-emerald-100/80 text-emerald-700 font-bold border border-emerald-200">Pet Care &amp; Vet Clinic</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">VetiPaws</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Dedicated veterinary clinic &amp; pet grooming portal. Online pet appointment scheduling, emergency contact triage, aur vaccination reminder system.
+            </p>
+          </div>
+          <a href="https://vetipaws.vercel.app/" target="_blank" class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-md shadow-emerald-600/20">
+            <span>Live Site Open Karein</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- 3. Apex Studio -->
+        <div class="group rounded-3xl border border-slate-200 bg-slate-50/80 hover:bg-white p-7 hover:border-amber-500 hover:shadow-xl hover:shadow-amber-500/10 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold">
+                <i data-lucide="video" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs px-3 py-1 rounded-full bg-amber-100/80 text-amber-800 font-bold border border-amber-200">Media &amp; Production</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors">Apex Studio</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              High-end creative video production, commercial ad agency, and photo studio website with project pitch estimator &amp; client onboarding flow.
+            </p>
+          </div>
+          <a href="https://apexstudio-rho.vercel.app/" target="_blank" class="w-full py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-md shadow-amber-500/20">
+            <span>Live Site Open Karein</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- 4. Magic Dental Clinic -->
+        <div class="group rounded-3xl border border-slate-200 bg-slate-50/80 hover:bg-white p-7 hover:border-cyan-500 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-600 flex items-center justify-center font-bold">
+                <i data-lucide="stethoscope" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs px-3 py-1 rounded-full bg-cyan-100/80 text-cyan-700 font-bold border border-cyan-200">Dental Healthcare</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2 group-hover:text-cyan-600 transition-colors">Magic Dental Clinic</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Doctor clinic prototype with automated patient symptom checker, treatment pricing transparency, and direct calendar appointment booking.
+            </p>
+          </div>
+          <a href="https://magicdentalclinik.vercel.app/" target="_blank" class="w-full py-3 px-4 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-md shadow-cyan-600/20">
+            <span>Live Site Open Karein</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- 5. Surahon -->
+        <div class="group rounded-3xl border border-slate-200 bg-slate-50/80 hover:bg-white p-7 hover:border-rose-500 hover:shadow-xl hover:shadow-rose-500/10 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold">
+                <i data-lucide="utensils" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs px-3 py-1 rounded-full bg-rose-100/80 text-rose-700 font-bold border border-rose-200">Fine Dining &amp; Cafe</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2 group-hover:text-rose-600 transition-colors">Surahon</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Atmospheric fine dining restaurant &amp; cafe prototype. Digital interactive menu, table reservation booking, and banquet inquiry lead capture.
+            </p>
+          </div>
+          <a href="https://surahon.vercel.app/" target="_blank" class="w-full py-3 px-4 rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-md shadow-rose-600/20">
+            <span>Live Site Open Karein</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Custom Requirement Card -->
+        <div class="rounded-3xl border-2 border-dashed border-amber-300 bg-gradient-to-br from-amber-50 to-orange-50 p-7 flex flex-col justify-between text-left">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold mb-5 shadow-sm">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Aapka Niche / Business?</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Kya aapka business Gym, Salon, Healthcare, Real Estate, ya Manufacturing me hai? Hum aapke liye 48 ghante ke andar tailored demo tayyar karke denge!
+            </p>
+          </div>
+          <a href="#custom-solutions" class="w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-bold flex items-center justify-center gap-2 transition-all">
+            <span>Custom Requirement Request Karein</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE ROI / BACHAT CALCULATOR -->
+  <section id="calculator" class="py-20 px-6 bg-slate-100/70 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto rounded-3xl border border-slate-200 bg-white p-8 md:p-12 shadow-sm text-center">
+      <span class="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-200 mb-3 inline-block">
+        💰 Kamai &amp; Bachat Calculator
+      </span>
+      <h2 class="text-3xl font-extrabold text-slate-900 mb-3">Check Karein Kitne Paise Bacheinge!</h2>
+      <p class="text-slate-600 text-sm mb-8">Sliders ko move karke dekhein ki AI aur automation lagane se har saal kitne paise aur staff ka kitna samay bachega.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-left">
+        <div class="space-y-6">
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-2">Mahine me aane wale Phone Calls / Leads: <span id="inquiryVal" class="text-indigo-600 font-extrabold">1,000</span></label>
+            <input type="range" id="inquiryRange" min="200" max="10000" step="100" value="1000" class="w-full accent-indigo-600 cursor-pointer" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-2">Staff ka average hourly kharcha (₹): <span id="costVal" class="text-indigo-600 font-extrabold">₹150</span></label>
+            <input type="range" id="costRange" min="50" max="1000" step="25" value="150" class="w-full accent-indigo-600 cursor-pointer" />
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-100 text-center">
+          <p class="text-xs text-indigo-700 uppercase font-bold tracking-wider mb-1">Saalana Anumanit Bachat</p>
+          <p id="savingsDisplay" class="text-4xl md:text-5xl font-black text-indigo-700 mb-2">₹1,80,000</p>
+          <p class="text-xs text-slate-500 font-medium">+ Approx. 1,200 ghante ka keemti samay bachega</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & LEAD AUDIT FORM -->
+  <section id="contact" class="py-20 px-6 border-t border-slate-200 bg-white">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3">Apne Business Ko Automatic Banayein</h2>
+      <p class="text-slate-600 text-sm mb-8">Neeche apna naam aur number dalein. Hum aapke business ke liye ek custom prototype aur live setup tayyar karke dikhayenge!</p>
+
+      <form onsubmit="event.preventDefault(); alert('Dhanyawad! Humara AI expert aapse 24 ghante ke andar WhatsApp par contact karega.');" class="space-y-4 text-left">
+        <div>
+          <label class="block text-xs uppercase text-slate-600 font-bold mb-1">Aapka Naam</label>
+          <input type="text" required placeholder="e.g. Diwaker Arya" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-indigo-600 focus:bg-white focus:outline-none text-slate-900 text-sm" />
+        </div>
+        <div>
+          <label class="block text-xs uppercase text-slate-600 font-bold mb-1">Mobile Number / WhatsApp</label>
+          <input type="text" required placeholder="e.g. 9876543210" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-indigo-600 focus:bg-white focus:outline-none text-slate-900 text-sm" />
+        </div>
+        <div>
+          <label class="block text-xs uppercase text-slate-600 font-bold mb-1">Aapko Kaunsa Solution Chahiye?</label>
+          <select class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-indigo-600 focus:bg-white focus:outline-none text-slate-900 text-sm">
+            <option>WhatsApp AI Copilot &amp; CRM Pipeline</option>
+            <option>AI Voice Calling Agent (Inbound/Outbound Phone Bot)</option>
+            <option>Custom AI Solution As Per My Requirement</option>
+            <option>Property Desk (Real Estate Dealer OS)</option>
+            <option>Custom AI Website &amp; Booking Chatbot</option>
+            <option>Lead Reactivation &amp; Nurture Agent</option>
+            <option>All-In-One Complete Business Automation</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold transition-all shadow-lg shadow-indigo-600/25">
+          Mera Free AI Demo Taiyar Karo
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Interactive AI Floating Chatbot UI (Kamai.AI Sathi) -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <!-- Chatbot Button -->
+    <button id="chatToggleBtn" class="w-14 h-14 rounded-full bg-gradient-to-tr from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white flex items-center justify-center shadow-xl shadow-amber-500/30 hover:scale-105 transition-all relative group">
+      <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white animate-pulse"></span>
+      <i id="chatIcon" data-lucide="message-square-text" class="w-6 h-6 transition-transform duration-300"></i>
+    </button>
+
+    <!-- Chat Box -->
+    <div id="chatBox" class="hidden absolute bottom-20 right-0 w-[350px] md:w-[380px] h-[480px] rounded-3xl border border-slate-200 bg-white shadow-2xl flex flex-col overflow-hidden transition-all duration-300 transform scale-95 opacity-0 origin-bottom-right">
+      <!-- Chat Header -->
+      <div class="p-4 bg-gradient-to-r from-indigo-600 to-indigo-700 text-white flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-white/20 text-white flex items-center justify-center">
+            <i data-lucide="bot" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold">Kamai.AI Sathi</h4>
+            <span class="text-[10px] text-emerald-200 flex items-center gap-1 font-medium">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-300"></span> Online (Business Sathi)
+            </span>
+          </div>
+        </div>
+        <button id="closeChat" class="text-white/80 hover:text-white transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Messages Stream -->
+      <div id="msgStream" class="flex-1 p-4 overflow-y-auto space-y-4 text-sm bg-slate-50">
+        <!-- AI Initial Message -->
+        <div class="flex items-start gap-2 max-w-[85%]">
+          <div class="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0">
+            <i data-lucide="bot" class="w-4 h-4"></i>
+          </div>
+          <div class="p-3 rounded-2xl rounded-tl-none bg-white border border-slate-200 text-slate-800 shadow-xs">
+            Namaste bhai! 🙏 Main hu aapka <strong>Kamai.AI Sathi</strong>.<br><br>
+            Aapko <strong>WhatsApp AI Automation</strong>, <strong>AI Voice Calling Agent</strong>, ya <strong>Custom Solution</strong> ke baare me janna hai?
+          </div>
+        </div>
+
+        <!-- Interactive Chips -->
+        <div id="chatOptions" class="flex flex-wrap gap-2 pt-2">
+          <button onclick="handleOptionClick('WhatsApp AI Automation kaise kaam karta hai?')" class="px-3.5 py-1.5 text-xs rounded-full border border-indigo-200 bg-white hover:bg-indigo-50 text-indigo-700 transition-all font-semibold shadow-xs">📲 WhatsApp AI Bot</button>
+          <button onclick="handleOptionClick('AI Voice Calling Agent kya hai?')" class="px-3.5 py-1.5 text-xs rounded-full border border-indigo-200 bg-white hover:bg-indigo-50 text-indigo-700 transition-all font-semibold shadow-xs">🎙️ AI Voice Agent</button>
+          <button onclick="handleOptionClick('Apne Business Requirement ke hisab se custom AI kaise banayein?')" class="px-3.5 py-1.5 text-xs rounded-full border border-indigo-200 bg-white hover:bg-indigo-50 text-indigo-700 transition-all font-semibold shadow-xs">⚙️ Custom Requirement</button>
+          <button onclick="handleOptionClick('Property Desk Real Estate OS kya hai?')" class="px-3.5 py-1.5 text-xs rounded-full border border-indigo-200 bg-white hover:bg-indigo-50 text-indigo-700 transition-all font-semibold shadow-xs">🏢 PropertyDesk OS</button>
+        </div>
+      </div>
+
+      <!-- Message Input Form -->
+      <div class="p-3 border-t border-slate-200 bg-white flex items-center gap-2">
+        <input id="chatInput" type="text" placeholder="Apna sawal likhein..." class="flex-1 px-3 py-2 text-xs rounded-xl bg-slate-100 border border-slate-200 focus:bg-white focus:border-indigo-600 focus:outline-none text-slate-900" />
+        <button id="sendBtn" class="w-8 h-8 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white flex items-center justify-center transition-all">
+          <i data-lucide="send" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 border-t border-slate-200 bg-slate-100 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Kamai.AI - Har Business Ka Digital Mitra. All rights reserved.</p>
+      <p class="font-medium text-slate-600">Built to empower Indian Businesses, Brokers &amp; MSMEs with Intelligent Autopilot Systems.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    lucide.createIcons();
+
+    // Calculator logic for Rupees
+    const inq = document.getElementById('inquiryRange');
+    const cost = document.getElementById('costRange');
+    const inqVal = document.getElementById('inquiryVal');
+    const costVal = document.getElementById('costVal');
+    const display = document.getElementById('savingsDisplay');
+
+    function calculate() {
+      inqVal.innerText = Number(inq.value).toLocaleString('en-IN');
+      costVal.innerText = '₹' + cost.value;
+      const hoursSavedPerYear = inq.value * 0.1 * 0.7 * 12;
+      const rupeesSaved = Math.round(hoursSavedPerYear * cost.value);
+      display.innerText = '₹' + rupeesSaved.toLocaleString('en-IN');
+    }
+    inq.addEventListener('input', calculate);
+    cost.addEventListener('input', calculate);
+    calculate();
+
+    // Chatbot Panel Toggle
+    const chatToggleBtn = document.getElementById('chatToggleBtn');
+    const chatBox = document.getElementById('chatBox');
+    const closeChat = document.getElementById('closeChat');
+    const chatIcon = document.getElementById('chatIcon');
+    const msgStream = document.getElementById('msgStream');
+    const chatInput = document.getElementById('chatInput');
+    const sendBtn = document.getElementById('sendBtn');
+    let isChatOpen = false;
+
+    function toggleChat() {
+      isChatOpen = !isChatOpen;
+      if (isChatOpen) {
+        chatBox.classList.remove('hidden');
+        setTimeout(() => {
+          chatBox.classList.remove('scale-95', 'opacity-0');
+          chatBox.classList.add('scale-100', 'opacity-100');
+        }, 10);
+        chatIcon.setAttribute('data-lucide', 'chevrons-down');
+      } else {
+        chatBox.classList.remove('scale-100', 'opacity-100');
+        chatBox.classList.add('scale-95', 'opacity-0');
+        setTimeout(() => chatBox.classList.add('hidden'), 300);
+        chatIcon.setAttribute('data-lucide', 'message-square-text');
+      }
+      lucide.createIcons();
+    }
+
+    chatToggleBtn.addEventListener('click', toggleChat);
+    closeChat.addEventListener('click', toggleChat);
+
+    function appendUserMessage(text) {
+      const msg = document.createElement('div');
+      msg.className = "flex justify-end";
+      msg.innerHTML = `
+        <div class="p-3 rounded-2xl rounded-tr-none bg-indigo-600 text-white max-w-[85%] font-medium shadow-xs">
+          ${text}
+        </div>
+      `;
+      msgStream.appendChild(msg);
+      msgStream.scrollTop = msgStream.scrollHeight;
+    }
+
+    function appendAIMessage(htmlText) {
+      const msg = document.createElement('div');
+      msg.className = "flex items-start gap-2 max-w-[85%]";
+      msg.innerHTML = `
+        <div class="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0">
+          <i data-lucide="bot" class="w-4 h-4"></i>
+        </div>
+        <div class="p-3 rounded-2xl rounded-tl-none bg-white border border-slate-200 text-slate-800 shadow-xs">
+          ${htmlText}
+        </div>
+      `;
+      msgStream.appendChild(msg);
+      msgStream.scrollTop = msgStream.scrollHeight;
+      lucide.createIcons();
+    }
+
+    function handleOptionClick(optText) {
+      appendUserMessage(optText);
+      document.getElementById('chatOptions').style.display = 'none';
+
+      setTimeout(() => {
+        if (optText.includes('WhatsApp AI Automation')) {
+          appendAIMessage("<strong>WhatsApp AI Suite</strong> 1.8 second me naye customers ko auto-reply deta hai, deals CRM me track karta hai aur bulk contacts ko 1-click me outreach karta hai. Scanner QR se 2 minute me connect ho jata hai! 📲");
+        } else if (optText.includes('AI Voice Calling Agent')) {
+          appendAIMessage("<strong>AI Voice Agent</strong> Hindi aur English me natural phone calls attend karta hai, appointments schedule karta hai aur cold leads ko follow-up call karta hai! 🎙️");
+        } else if (optText.includes('custom AI')) {
+          appendAIMessage("Hum aapke existing CRM, billing system ya Google Sheets ke mutabiq <strong>Custom Tailored AI Workflow</strong> banate hain! Niche diye gaye form se requirement share karein.");
+        } else if (optText.includes('Property Desk')) {
+          appendAIMessage("<strong>Property Desk</strong> property dealers ke liye complete OS hai: <br>• 100-point smart matching algorithm <br>• 1-tap WhatsApp sharing with photos <br>• Google Calendar site visits sync <br>• Records stay in your Google Sheet!");
+        }
+      }, 700);
+    }
+
+    function sendManualMsg() {
+      const text = chatInput.value.trim();
+      if (!text) return;
+      appendUserMessage(text);
+      chatInput.value = '';
+
+      setTimeout(() => {
+        appendAIMessage("Bohot badiya sawal hai! Hum aapse WhatsApp par direct connect karke aapka customized dashboard live setup karwa denge. Niche diye gaye form ko submit karein!");
+      }, 800);
+    }
+
+    sendBtn.addEventListener('click', sendManualMsg);
+    chatInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') sendManualMsg();
+    });
+  </script>
+</body>
+</html>
